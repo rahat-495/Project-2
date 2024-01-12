@@ -6,8 +6,16 @@
 
 /* shared styles */
 
-.btn-primary{
-    
+.btn-primary {
+  border-radius: 8px;
+  background: #ff900e;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 20px 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 /* header styles */
@@ -47,7 +55,7 @@ nav ul li a {
 
 /* banner styles */
 .banner-content {
-  max-width: 800px;
+  max-width: 50rem;
   text-align: center;
   margin: 0 auto;
 }
@@ -56,10 +64,69 @@ nav ul li a {
   font-size: 4rem;
   width: 862px;
   color: #131313;
+  margin-top: 50px;
 }
 
 .banner-desc {
   color: #727272;
   font-weight: 400;
   line-height: 26px;
+  margin-bottom: 32px;
+}
+
+.extra {
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+/* responsive styles */
+/* Mobile devices */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 0px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 15px;
+  }
+
+  .nav-title {
+    margin: 10px auto;
+  }
+
+  .banner-title {
+    width: 20rem;
+    text-align: center;
+    margin: 30px auto 15px auto;
+  }
+
+}
+
+
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  nav {
+    flex-direction: column;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  .banner-title {
+    width: 20rem;
+    text-align: center;
+    margin: 30px auto 15px auto;
+  }
+
 }
