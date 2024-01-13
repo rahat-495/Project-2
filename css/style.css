@@ -143,17 +143,79 @@ main {
   width: 33.56rem;
 }
 
+/* feature section style */
+.features-section {
+  display: flex;
+  margin-top: 130px;
+  gap: 120px;
+}
+
+.feature-content .card {
+  padding: 40px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 50px;
+}
+
+.feature-content .section-title {
+  border-left: 5px solid #ff900e;
+  height: 106px;
+  padding-left: 20px;
+  flex-shrink: 0;
+}
+
+.badge-10 {
+  border-radius: 8px;
+  background: #ff900e;
+  width: 342px;
+  height: 200px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 100px;
+}
+
+.badge-10 h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 4.06rem;
+  font-weight: 700;
+  line-height: 70px;
+  margin: 0px;
+}
+
+.uncommon {
+  margin-bottom: 35px;
+}
+
+.badge-10 p {
+  color: #fff;
+  font-size: 1.56rem;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+}
+
+.feature-img img {
+  height: 90%;
+  margin-left: 80px;
+}
+
 /* facts section */
 
-.facts-section{
+.facts-section {
   margin-bottom: 120px;
 }
 
-.facts-title{
+.facts-title {
   margin-bottom: 24px;
 }
 
-.facts-desc{
+.facts-desc {
   margin-top: 0px;
   width: 33.87rem;
 }
@@ -178,18 +240,18 @@ main {
   margin-top: 10px;
 }
 
-.facts-card-container .card-title{
+.facts-card-container .card-title {
   font-weight: 600;
   font-size: 1.25rem;
 }
 
 /* Sponspors section */
-.sponspors-section{
+.sponspors-section {
   text-align: center;
   margin-bottom: 210px;
 }
 
-.sponspors-img-container{
+.sponspors-img-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -197,12 +259,33 @@ main {
   gap: 20px;
 }
 
-.sponspors-img-container img{
+.sponspors-img-container img {
   width: 165px;
 }
 
+footer {
+  border-radius: 8px;
+  background: rgb(255, 244, 231);
+  width: 90rem;
+  height: 6.25rem;
+  flex-shrink: 0;
+  margin: 130px auto 130px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.2s;
+}
 
+footer:hover{
+  box-shadow: 2px 2px 3px rgba(168, 161, 152, 0.9);
+}
 
+.footer-desc {
+  color:  #424242;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
 
 
 
@@ -216,6 +299,7 @@ main {
 
   nav,
   .teams-section,
+  .features-section,
   .facts-card-container,
   .sponspors-img-container {
     flex-direction: column;
@@ -255,38 +339,59 @@ main {
     width: 25rem;
   }
 
-  .facts-card-container{
+  .facts-card-container {
     padding: 10px;
   }
 
-  .facts-card-container .card{
+  .facts-card-container .card {
     margin-top: 25px;
   }
 
-  .facts-desc{
+  .facts-desc {
     margin-top: 0px;
     width: 28rem;
   }
 
-  .sponspors-img-container img{
+  .sponspors-img-container img {
     width: 200px;
   }
 
-  .sponspors-img-container{
+  .sponspors-img-container {
     gap: 60px;
   }
 
+  .feature-img img {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .feature-content .card {
+    margin: 10px;
+  }
+
+  .badge-10 {
+    width: 100%;
+  }
+
+  footer{
+    width: 80%;
+  }
+
+  .footer-desc {
+    color:  #424242;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
 }
-
-
-
-
 
 /* tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   nav,
   .teams-section,
-  .facts-card-container{
+  .features-section,
+  .facts-card-container {
     flex-direction: column;
   }
 
@@ -324,13 +429,37 @@ main {
     width: 33rem;
   }
 
-  .facts-card-container .card{
+  .facts-card-container .card {
     margin-top: 25px;
     margin: 10px;
   }
 
-  .sponspors-img-container img{
+  .sponspors-img-container img {
     width: 100px;
+  }
+
+  .feature-img img {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .feature-content .card {
+    margin: 10px;
+  }
+
+  .badge-10 {
+    width: 100%;
+  }
+
+  footer{
+    width: 80%;
+  }
+
+  .footer-desc {
+    color:  #424242;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
   }
 
 }
